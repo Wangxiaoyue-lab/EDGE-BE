@@ -17,8 +17,6 @@ An editing-activity-adjusted dynamic modeling method for multi-time-point screen
 ## Installation
 
 Ensure you have Python 3.7+ installed. You can install the package directly from GitHub:
-
-```bash
 pip install git+https://github.com/Wangxiaoyue-lab/EDGE-BE.git
 
 Or clone the repository and install it locally:
@@ -28,6 +26,7 @@ cd bayesian-analysis
 pip install .
 
 ## Usage
+
 bayesian-analysis -f path/to/input/file.tsv -o path/to/output/file.tsv -m advi -c -0.05 -n "count-1_ratio,count-2_ratio" -t "1,2,3" -g gene_column -e 0 -fc fc_column -a 0 -r 0.6
 
 Parameters

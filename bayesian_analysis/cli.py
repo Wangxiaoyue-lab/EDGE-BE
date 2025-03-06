@@ -24,6 +24,7 @@ def main(file, ofile, smpmtd, cutoff, name, time, gene, ef, fc, count, ratio):
     
     # Preprocess data
     ba.preprocess_data()
+    ba.calculate_means()
     
     # Run Bayesian model
     ba.run_bayesian_model()

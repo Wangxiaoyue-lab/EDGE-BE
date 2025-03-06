@@ -29,8 +29,8 @@ class BayesianAnalysis:
         self.sample_names = self.data['sgRNA']
         self.sgRNA_names = self.data[self.gene]
         self.N0 = self.data[init].values.astype(float)
-        self.P = self.data[self.ratio_col].values.astype(float)/30000000  # 缩放比例
-        self.p = self.data['ef'].values.astype(float)  # 编辑效率
+        self.P = self.data[self.ratio_col].values.astype(float)/30000000  # scale
+        self.p = self.data['ef'].values.astype(float)  # editing efficiency
         
         self.log2_ratio = np.log2((self.data[self.fc].values.astype(float)+self.epsilon) / (self.data[init].values.astype(float)+self.epsilon))
     

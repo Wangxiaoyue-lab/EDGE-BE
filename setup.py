@@ -21,9 +21,8 @@ setup(
             'bayesian-analysis=bayesian_analysis.cli:main',
         ],
     },
-    author='Your Name',
-    author_email='your.email@example.com',
-    description='A Bayesian analysis tool for genetic data.',
+    author='WangLab',
+    description='A Bayesian analysis tool for CRISPR-BE screening data.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
 )

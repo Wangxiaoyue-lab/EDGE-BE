@@ -23,7 +23,7 @@ Or clone the repository and install it locally:
 
 git clone https://github.com/Wangxiaoyue-lab/EDGE-BE.git
 
-cd bayesian-analysis
+cd EDGE-BE
 
 pip install .
 

@@ -17,6 +17,7 @@ An editing-activity-adjusted dynamic modeling method for multi-time-point screen
 ## Installation
 
 Ensure you have Python 3.7+ installed. You can install the package directly from GitHub:
+
 pip install git+https://github.com/Wangxiaoyue-lab/EDGE-BE.git
 
 Or clone the repository and install it locally:

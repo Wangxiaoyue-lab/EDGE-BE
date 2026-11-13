@@ -1,28 +1,30 @@
-# setup.py
+from pathlib import Path
 
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
+
+
+ROOT = Path(__file__).parent
+
 
 setup(
-    name='bayesian-analysis',
-    version='0.1',
+    name="bayesian-analysis",
+    version="0.2.0",
     packages=find_packages(),
+    python_requires=">=3.9",
     install_requires=[
-        'pandas',
-        'numpy',
-        'click',
-        'pymc',
-        'pytensor',
-        'matplotlib',
-        'arviz',
-        'scipy'
+        "numpy",
+        "pandas",
+        "pymc>=5",
+        "pytensor",
+        "click",
     ],
     entry_points={
-        'console_scripts': [
-            'bayesian-analysis=bayesian_analysis.cli:main',
+        "console_scripts": [
+            "bayesian-analysis=bayesian_analysis.cli:main",
         ],
     },
-    author='WangLab',
-    description='A Bayesian analysis tool for CRISPR-BE screening data.',
-    long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
+    author="WangLab",
+    description="Editing-activity-adjusted Bayesian modeling for CRISPR-BE screens.",
+    long_description=(ROOT / "README.md").read_text(encoding="utf-8"),
+    long_description_content_type="text/markdown",
 )
